@@ -71,6 +71,10 @@
 
 ## Other
 
+### Fonts
+
+- [Public Sans](https://public-sans.digital.gov/)
+
 ### Languages
 
 - [Deno](https://deno.land) An alternative to Node written in Rust and Typescript

@@ -1,29 +1,34 @@
 # Software Resources & Tools
 
-# Frontend
+## Frontend
 
-**UI Frameworks**
+### UI Frameworks
 
 - [Stencil](https://stenciljs.com/) - Web components framework
 - [omi](https://github.com/Tencent/omi) - Web components framework
 - [hyperapp](https://github.com/jorgebucaran/hyperapp) - Micro web framework
 
-**React**
+### React
 
 - [Formik](https://jaredpalmer.com/formik/docs/overview) - Form library
 - [react-native-web](https://github.com/necolas/react-native-web) - Write cross-platform react components
 - [Enable hot reloading in create-react-app](https://daveceddia.com/hot-reloading-create-react-app/)
 
-**Performance**
+#### React Hooks
+
+- [use-clipboard-copy](https://github.com/wsmd/use-clipboard-copy)
+
+### Performance
 
 - [Writeup on web page performance](https://www.smashingmagazine.com/2019/01/front-end-performance-checklist-2019-pdf-pages/)
 
-**Other**
+### Other
 
 - [fromjs](http://www.fromjs.com/) - Data flow analysis tool 
-# Backend
 
-**APIs**
+## Backend
+
+### APIs
 
 - GraphQL
   - [Apollo](https://www.apollographql.com/) - GraphQL client
@@ -38,46 +43,52 @@
   - [AWS Step Functions](https://aws.amazon.com/step-functions/)
 
 
-# Universal
+## Universal
 
-**Internationalization**
+### Internationalization
 
 - [FBT](https://facebookincubator.github.io/fbt/) - Facebook translation library for JavaScript
 
-**Testing**
+### Testing
 
 - [Happo](https://happo.io/) - Screenshot diff testing tool
 - [Cypress](https://www.cypress.io/) - Automated browser testing
 
-**Utilities**
+### Utilities
 
 - [Day.js](https://github.com/iamkun/dayjs) - Lightweight, immutable moment.js compatible date library
+- [nexe](https://github.com/nexe/nexe) - A command-line utility that compiles your Node.js application into a single executable file
+- [pkg](https://github.com/zeit/pkg) - This command line interface enables you to package your Node.js project into an executable that can be run even on devices without Node.js installed.
 
+## Tooling
 
-# Tooling
+### Automation / Build Tools
 
-**Automation / Build Tools**
-
-- [Yeoman](https://yeoman.io/) - 
+- [Yeoman](https://yeoman.io/) - Code generation
 - [VSCode Tasks](https://code.visualstudio.com/Docs/editor/tasks)
 - [Release It](https://github.com/webpro/release-it) - Tasks for making npm/git releases easier
 
 
-# Other
+## Other
 
-**Design**
+### Languages
+
+- [Deno](https://deno.land) An alternative to Node written in Rust and Typescript
+
+### Design
 
 - [Figma](https://www.figma.com/)
 
-**Project Management**
+### Project Management
 
 - [GeekBot](https://geekbot.com) - Slack based Scrum meetings
 
-**Documentation**
+### Documentation
 
 - [API docs as structured data](https://electronjs.org/blog/api-docs-json-schema)
+- [docusaurus](https://docusaurus.io/) - Generate
 
-**Support**
+### Support
 
 - [Canny](https://canny.io/) - Customer product feature feedback
 

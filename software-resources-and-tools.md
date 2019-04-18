@@ -87,6 +87,7 @@
 
 - [API docs as structured data](https://electronjs.org/blog/api-docs-json-schema)
 - [docusaurus](https://docusaurus.io/) - Generate
+- [MDX](https://mdxjs.com/) - MDX is an authorable format that lets you seamlessly write JSX in your Markdown documents. You can import components, such as interactive charts or alerts, and embed them within your content.
 
 ### Support
 

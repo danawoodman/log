@@ -82,6 +82,7 @@
 ### Design
 
 - [Figma](https://www.figma.com/)
+- [Adele](https://adele.uxpin.com/) - Library of company UI toolkits/frameworks/styleguides
 
 ### Project Management
 

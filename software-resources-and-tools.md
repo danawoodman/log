@@ -16,6 +16,7 @@
 
 #### React Hooks
 
+- [react-use](https://github.com/streamich/react-use) - A big library of useful React hooks
 - [use-clipboard-copy](https://github.com/wsmd/use-clipboard-copy)
 
 ### Performance

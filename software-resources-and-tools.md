@@ -14,6 +14,11 @@
 - [react-native-web](https://github.com/necolas/react-native-web) - Write cross-platform react components
 - [Enable hot reloading in create-react-app](https://daveceddia.com/hot-reloading-create-react-app/)
 
+### State Management
+
+- [Rematch](https://rematch.gitbooks.io)
+- [use-global-hook](https://github.com/andregardi/use-global-hook)
+
 #### React Hooks
 
 - [react-use](https://github.com/streamich/react-use) - A big library of useful React hooks

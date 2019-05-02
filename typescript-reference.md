@@ -28,7 +28,7 @@ declare module 'some-module' {
 
 ## Troubleshooting
 
-### Resolving `An index signature parameter type cannot be a union type. Consider using a mapped object type instead` exception
+### `An index signature parameter type cannot be a union type. Consider using a mapped object type instead`
 
 If you try to create an index signature for an object by defining the type of the `key` of the object and you try to use an `interface`, you may get the above error.
 

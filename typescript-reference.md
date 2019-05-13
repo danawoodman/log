@@ -26,6 +26,27 @@ declare module 'some-module' {
 }
 ```
 
+### Using React `useRef()` hook with Typescript
+
+To use the `useRef` hook, make sure to define its return type as `<HTMLInputElement>`.
+
+```ts
+function MyComponent() {
+  const input = useRef<HTMLInputElement>(null)
+  
+  return (
+    <form 
+      onSubmit={e => {
+        e.preventDefault()
+        alert('Value: ' + input.current.value)
+      }}
+    >
+      <input ref={input} />
+    </form>
+  )
+}
+```
+
 ## Troubleshooting
 
 ### `An index signature parameter type cannot be a union type. Consider using a mapped object type instead`

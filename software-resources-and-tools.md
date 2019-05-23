@@ -23,6 +23,7 @@
 
 - [react-use](https://github.com/streamich/react-use) - A big library of useful React hooks
 - [use-clipboard-copy](https://github.com/wsmd/use-clipboard-copy)
+- [react-hotkeys-hook](https://github.com/JohannesKlauss/react-hotkeys-hook)
 
 ### Performance
 
@@ -49,8 +50,6 @@
   - [AWS Step Functions](https://aws.amazon.com/step-functions/)
 
 
-## Universal
-
 ### Internationalization
 
 - [FBT](https://facebookincubator.github.io/fbt/) - Facebook translation library for JavaScript
@@ -66,7 +65,10 @@
 - [nexe](https://github.com/nexe/nexe) - A command-line utility that compiles your Node.js application into a single executable file
 - [pkg](https://github.com/zeit/pkg) - This command line interface enables you to package your Node.js project into an executable that can be run even on devices without Node.js installed.
 
-## Tooling
+### Command Line
+
+- [Ink](https://github.com/vadimdemedes/ink) - Write command line apps with React
+- [pastel](https://github.com/vadimdemedes/pastel) - Framework for building React command line UIs using Ink
 
 ### Automation / Build Tools
 
@@ -75,7 +77,9 @@
 - [Release It](https://github.com/webpro/release-it) - Tasks for making npm/git releases easier
 
 
-## Other
+### Robotics / Low-Level
+
+- [Low.js](https://www.lowjs.org/) - Javascript runtime for ESP32-WROVER module
 
 ### Fonts
 
@@ -89,6 +93,10 @@
 
 - [Figma](https://www.figma.com/)
 - [Adele](https://adele.uxpin.com/) - Library of company UI toolkits/frameworks/styleguides
+
+### UX
+
+- [UserBit](https://userbitapp.com/) - UX testing tool
 
 ### Project Management
 

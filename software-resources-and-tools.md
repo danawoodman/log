@@ -14,6 +14,10 @@
 - [react-native-web](https://github.com/necolas/react-native-web) - Write cross-platform react components
 - [Enable hot reloading in create-react-app](https://daveceddia.com/hot-reloading-create-react-app/)
 
+#### React Testing
+
+- [react-testing-library](https://github.com/testing-library/react-testing-library)
+
 ### State Management
 
 - [Rematch](https://rematch.gitbooks.io)

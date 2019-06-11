@@ -34,3 +34,26 @@
   * 12-30k RPM
   * .25" collet
   * 1.25 HP (?)
+
+### [Carbide 3D Nomad](https://carbide3d.com/nomad/)
+
+![](https://cl.ly/8619bd78d7e3/Screen%20Shot%202019-06-10%20at%2010.17.53%20PM.png)
+
+* $2,499 - 8"x8"x3" cutting area
+* 100 in/min max (X/Y)
+* 50 in/min max (Z)
+* Resolution: .0005"
+* Repeatability: .0015"
+* Accuracy: 	.005"
+* Tool length measurement
+* Nema 17 motors
+* Lead screw
+* 20mm linear bearings
+* Fully enclosed
+* OSX or Windows
+* Built on GRBL (I believe?)
+* Custom brushless DC motor
+  * PWM
+  * 2-10k RPM
+  * ER-11 collet
+  * 70 watts

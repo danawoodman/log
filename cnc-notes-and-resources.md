@@ -26,7 +26,7 @@
 * $1,600 - 33"x16"x3" cutting area
 * $1,820 - 33"x33"x3" cutting area
 * Nema 23 motors (smallest version)
-* Belt driven
+* 👎 Belt driven
 * OSX or Windows
 * Built on GRBL (I believe?)
 * Carbide router spindle
@@ -45,15 +45,32 @@
 * Resolution: .0005"
 * Repeatability: .0015"
 * Accuracy: 	.005"
-* Tool length measurement
-* Nema 17 motors
+* 👍 Tool length measurement
+* 👎 Nema 17 motors
 * Lead screw
 * 20mm linear bearings
-* Fully enclosed
+* 👍 Fully enclosed
 * OSX or Windows
 * Built on GRBL (I believe?)
 * Custom brushless DC motor
-  * PWM
+  * 👍 PWM
   * 2-10k RPM
-  * ER-11 collet
+  * 👍 ER-11 collet
   * 70 watts
+
+### [Bantom Tools Desktop PCB CNC]()
+
+![](https://cl.ly/0e565dc05c98/Screen%20Shot%202019-06-10%20at%2010.25.36%20PM.png)
+
+* $3,199 - 5.5"x4.5"x1.6" cutting area
+* 👎 HDPE body
+* 100 in/min max (X/Y/Z)
+* Accuracy: 	<.003"
+* 👎 Nema 17 motors
+* 👎 ACME screw (?)
+* OSX or Windows
+* Custom brushless DC motor
+  * 👍 PWM (?)
+  * 8.5-26k RPM
+  * 👍 ER-11 collet
+  * ?? HP/Watts

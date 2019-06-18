@@ -1,14 +1,9 @@
 # CNC Notes and Resources
 
-## CNC Machine Components
+## My Desktop CNC Build
 
-* Spindle
-* Gantry
-* Bed
-* Stepper motors
-* Stepper drivers
-* Drag chain
-* Limit switches
+- Overview of costs
+- Design goals
 
 ## Resources
 

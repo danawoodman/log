@@ -10,6 +10,15 @@
 * Drag chain
 * Limit switches
 
+## Resources
+
+## CNC Software
+
+- [Chilipepr](http://www.chilipeppr.com)
+- [LaserWeb](https://github.com/LaserWeb/LaserWeb4)
+- [Mach3](https://www.machsupport.com)
+- [Mach4](https://www.machsupport.com/software/mach4/)
+
 ## CNC Education
 
 * [NYC CNC / Saunders Machine Works Youtube Channel](https://www.youtube.com/user/saunixcomp)
@@ -35,7 +44,7 @@
   * .25" collet
   * 1.25 HP (?)
 
-### [Carbide 3D Nomad](https://carbide3d.com/nomad/)
+#### [Carbide 3D Nomad](https://carbide3d.com/nomad/)
 
 ![](https://cl.ly/8619bd78d7e3/Screen%20Shot%202019-06-10%20at%2010.17.53%20PM.png)
 
@@ -58,7 +67,7 @@
   * 👍 ER-11 collet
   * 70 watts
 
-### [Bantom Tools Desktop PCB CNC]()
+#### [Bantom Tools Desktop PCB CNC]()
 
 ![](https://cl.ly/0e565dc05c98/Screen%20Shot%202019-06-10%20at%2010.25.36%20PM.png)
 

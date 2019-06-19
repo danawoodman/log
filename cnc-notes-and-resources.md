@@ -11,6 +11,8 @@
 
 - [Chilipepr](http://www.chilipeppr.com)
 - [LaserWeb](https://github.com/LaserWeb/LaserWeb4)
+- [Easel](http://easel.inventables.com)
+- [Carbide Create](https://carbide3d.com/carbidecreate/)
 - [Mach3](https://www.machsupport.com)
 - [Mach4](https://www.machsupport.com/software/mach4/)
 

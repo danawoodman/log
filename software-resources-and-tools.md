@@ -6,6 +6,8 @@
 - [omi](https://github.com/Tencent/omi) - Web components framework
 - [hyperapp](https://github.com/jorgebucaran/hyperapp) - Micro web framework
 - [Svelte]()
+  - [sapper](https://github.com/sveltejs/sapper) - Svelte-based PWA framework
+  - [sapper-starter-graphql](https://github.com/drejohnson/sappper-starter-graphql) - GraphQL + Svelte starter PWA
   - [svelte-adapter](https://github.com/pngwn/svelte-adapter) - Use Svelte in React and Vue
 
 #### React
@@ -53,7 +55,7 @@
   - [Lucid](https://reactlucid.io/) - Developer tools for React + GraphQL
 - [NestJS](https://docs.nestjs.com/) - API framework with REST, WebSocket and GraphQL support
 - [Prisma](https://github.com/prisma/prisma) - Database abstraction layer for GraphQL and REST APIs
-
+- [autoserver](https://github.com/ehmicky/autoserver) - Auto-generated API server from a config file
 
 
 #### Internationalization

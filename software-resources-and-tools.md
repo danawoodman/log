@@ -5,6 +5,8 @@
 - [Stencil](https://stenciljs.com/) - Web components framework
 - [omi](https://github.com/Tencent/omi) - Web components framework
 - [hyperapp](https://github.com/jorgebucaran/hyperapp) - Micro web framework
+- [Svelte]()
+  - [svelte-adapter](https://github.com/pngwn/svelte-adapter) - Use Svelte in React and Vue
 
 #### React
 
@@ -33,10 +35,16 @@
 
 #### Data
 
-- [fromjs](http://www.fromjs.com/) - Data flow analysis tool 
+- [fromjs](http://www.fromjs.com/) - Data flow analysis tool - Lambda
+
 
 #### APIs
 
+- Serverless
+  - [faast.js](https://faastjs.org/) - Serverless framework
+  - [Serverless](https://serverless.com)
+    - [API Gateway + WebSockets](https://serverless.com/blog/api-gateway-websockets-example/)
+  - [AWS Step Functions](https://aws.amazon.com/step-functions/)
 - GraphQL
   - [Apollo](https://www.apollographql.com/) - GraphQL client
   - [Apollo Engine](https://engine.apollographql.com/account/gh.remoteit/services)
@@ -45,9 +53,7 @@
   - [Lucid](https://reactlucid.io/) - Developer tools for React + GraphQL
 - [NestJS](https://docs.nestjs.com/) - API framework with REST, WebSocket and GraphQL support
 - [Prisma](https://github.com/prisma/prisma) - Database abstraction layer for GraphQL and REST APIs
-- Lambda
-  - [API Gateway + WebSockets](https://serverless.com/blog/api-gateway-websockets-example/)
-  - [AWS Step Functions](https://aws.amazon.com/step-functions/)
+
 
 
 #### Internationalization

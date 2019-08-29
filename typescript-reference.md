@@ -1,8 +1,6 @@
 # Typescript Reference
 
-### External resources
-
-- [The Do's and Don'ts of Typescript](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html)
+## Language Reference
 
 ### Get the return type of a function
 
@@ -47,7 +45,65 @@ function MyComponent() {
 }
 ```
 
-## Troubleshooting
+### [Generics](https://www.typescriptlang.org/docs/handbook/generics.html)
+
+```ts
+interface Lengthwise {
+  length: number;
+}
+
+function loggingIdentity<T extends Lengthwise>(arg: T): T {
+  console.log(arg.length);  // Now we know it has a .length property, so no more error
+  return arg;
+}
+```
+
+```ts
+function getProperty<T, K extends keyof T>(obj: T, key: K) {
+  return obj[key];
+}
+
+let x = { a: 1, b: 2, c: 3, d: 4 };
+
+getProperty(x, "a"); // okay
+getProperty(x, "m"); // error: Argument of type 'm' isn't assignable to 'a' | 'b' | 'c' | 'd'.
+```
+
+### [Type Guards](https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-guards-and-differentiating-types)
+
+```ts
+function isFish(pet: Fish | Bird): pet is Fish {
+  return (pet as Fish).swim !== undefined;
+}
+
+if (isFish(pet)) {
+  pet.swim();
+}
+else {
+  pet.fly();
+}
+
+function move(pet: Fish | Bird) {
+  if ("swim" in pet) {
+      return pet.swim();
+  }
+  return pet.fly();
+}
+```
+
+```ts
+function padLeft(value: string, padding: string | number) {
+  if (typeof padding === "number") {
+    return Array(padding + 1).join(" ") + value;
+  }
+  if (typeof padding === "string") {
+    return padding + value;
+  }
+  throw new Error(`Expected string or number, got '${padding}'.`);
+}
+```
+
+## Troubleshooting Typescript
 
 ### `An index signature parameter type cannot be a union type. Consider using a mapped object type instead`
 
@@ -60,3 +116,7 @@ type Foo = 'a' | 'b'
 type Bar = { [key in Foo]: any }   // Works
 interface Baz { [key in Foo]: any } // Fails
 ```
+
+## External resources
+
+- [The Do's and Don'ts of Typescript](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html)

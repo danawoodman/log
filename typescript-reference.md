@@ -24,6 +24,14 @@ declare module 'some-module' {
 }
 ```
 
+### Getting the type from an object's keys
+
+```ts
+const obj = { a: 1, b: 2, c: 3 }
+type ServiceKey = keyof typeof obj
+// ServiceKey = 'a' | 'b' | 'c'
+```
+
 ### Using React `useRef()` hook with Typescript
 
 To use the `useRef` hook, make sure to define its return type as `<HTMLInputElement>`.

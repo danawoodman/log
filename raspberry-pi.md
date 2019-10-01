@@ -73,7 +73,7 @@ pulseaudio --start
 pactl list short
 ```
 
-#### Start pulseaudio on boot:
+### Start pulseaudio on boot:
 
 [Start pulseaudio on boot](https://rudd-o.com/linux-and-free-software/how-to-make-pulseaudio-run-once-at-boot-for-all-your-users):
 

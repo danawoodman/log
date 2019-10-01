@@ -28,18 +28,29 @@ network={
 
 ## Setup a RPI as a Bluetooth audio server
 
+Just use [this guide to get things setup using balena](https://www.balena.io/blog/turn-your-old-speakers-or-hi-fi-into-bluetooth-receivers-using-only-a-raspberry-pi/).
+
+
+
+#### Older versions....
+
+
 
 ```shell
 $ sudo apt update -y
 $ sudo apt upgrade -y
-$ sudo apt install -y bluealsa bluez
+$ sudo apt install -y bluealsa bluez bluetooth pulseaudio-module-bluetooth
+$ pulseaudio --start
+$ sudo pactl unload-module module-bluetooth-discover
+$ sudo pactl load-module module-bluetooth-discover
 $ sudo bluetoothctl
 # agent on
 # default-agent
 # discoverable on
 # scan on
 # trust <MAC_ADDRESS>
-# connect <MAC_ADDRESS>
+# pair <MAC_ADDRESS>
+# conect <MAC_ADDRESS>
 # exit
 $ sudo /bin/hciconfig hci0 inqdata "0c097261737062657272797069020a00091002006b1d460217050d03001801180e110c1115110b1100"
 $ sudo bluealsa -p a2dp-sink &
@@ -48,9 +59,6 @@ $ sudo bluealsa-aplay F0:C3:71:1F:3E:71 &
 
 - [ ] Set this all up with a simple script
 - [ ] Run this as a system service
-
-
-#### Older version:
 
 From [this guide](https://circuitdigest.com/microcontroller-projects/diy-raspberry-pi-bluetooth-speaker) and [this one](https://scribles.net/streaming-bluetooth-audio-from-phone-to-raspberry-pi-using-alsa/):
 

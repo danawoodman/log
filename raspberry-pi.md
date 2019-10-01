@@ -53,5 +53,11 @@ trust <MAC_ADDRESS>
 connect <MAC_ADDRESS>
 ```
 
-5. 
+5. Run the following (no idea why this works or is needed...)
+
+```
+sudo hciconfig hci0 leadv 0
+sudo hciconfig hci0 leadv 3
+sudo /bin/hciconfig hci0 inqdata "0c097261737062657272797069020a00091002006b1d460217050d03001801180e110c1115110b1100"
+```
 

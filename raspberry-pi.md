@@ -78,7 +78,8 @@ pactl list short
 7. Run bluealsa:
 
 ```shell
-bluealsa-aplay <MAC_ADDRESS>
+sudo bluealsa -p a2dp-sink &
+sudo bluealsa-aplay <MAC_ADDRESS> &
 ```
 
 ### Start pulseaudio on boot:

@@ -1,6 +1,6 @@
 # Raspberry Pi Resources
 
-### Headless RPI install
+## Headless RPI install
 
 From [this article](https://desertbot.io/blog/headless-pi-zero-w-wifi-setup-windows)
 
@@ -26,14 +26,16 @@ network={
 8. Optional: change your hostname with `sudo raspi-config`
 
 
-### Setup a RPI as a Bluetooth audio server
+## Setup a RPI as a Bluetooth audio server
 
 From [this guide](https://circuitdigest.com/microcontroller-projects/diy-raspberry-pi-bluetooth-speaker) and [this one](https://scribles.net/streaming-bluetooth-audio-from-phone-to-raspberry-pi-using-alsa/):
 
 1. Setup dependencies:
 
 ```
-sudo apt install bluez pulseaudio-*.
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install -y bluez pulseaudio-*.
 ```
 
 2. Setup Bluetooth to be discoverable:

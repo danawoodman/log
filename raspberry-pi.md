@@ -35,7 +35,8 @@ From [this guide](https://circuitdigest.com/microcontroller-projects/diy-raspber
 ```shell
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install -y bluez pulseaudio-*.
+sudo apt install -y bluealsa bluez pulseaudio-*.
+sudo bluealsa -p a2dp-sink &
 ```
 
 2. Setup Bluetooth to be discoverable:
@@ -53,6 +54,7 @@ $ sudo bluetoothctl
 ```shell
 trust <MAC_ADDRESS>
 connect <MAC_ADDRESS>
+pair <MAC_ADDRESS>
 ```
 
 5. Run the following (no idea why this works or is needed...)
@@ -71,6 +73,12 @@ pulseaudio --start
 
 # make sure it worked:
 pactl list short
+```
+
+7. Run bluealsa:
+
+```shell
+bluealsa-aplay <MAC_ADDRESS>
 ```
 
 ### Start pulseaudio on boot:

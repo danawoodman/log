@@ -32,7 +32,7 @@ From [this guide](https://circuitdigest.com/microcontroller-projects/diy-raspber
 
 1. Setup dependencies:
 
-```
+```shell
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install -y bluez pulseaudio-*.
@@ -40,7 +40,7 @@ sudo apt install -y bluez pulseaudio-*.
 
 2. Setup Bluetooth to be discoverable:
 
-```
+```shell
 $ sudo bluetoothctl
 # agent on
 # default-agent
@@ -50,17 +50,58 @@ $ sudo bluetoothctl
 3. Now connect to the RPi with your phone.
 4. In `bluetoothctl` you will see the phone connect, copy the MAC address into:
 
-```
+```shell
 trust <MAC_ADDRESS>
 connect <MAC_ADDRESS>
 ```
 
 5. Run the following (no idea why this works or is needed...)
 
-```
+```shell
 sudo hciconfig hci0 leadv 0
 sudo hciconfig hci0 leadv 3
 sudo /bin/hciconfig hci0 inqdata "0c097261737062657272797069020a00091002006b1d460217050d03001801180e110c1115110b1100"
 ```
 
-Note: you can change the name of your Bluetooth device by following [this Stack Overflow answer](https://stackoverflow.com/a/49988428/529829).
+   Note: you can change the name of your Bluetooth device by following [this Stack Overflow answer](https://stackoverflow.com/a/49988428/529829).
+6. Start pulseaudio daemon:
+
+```shell
+pulseaudio --start
+
+# make sure it worked:
+pactl list short
+```
+
+#### Start pulseaudio on boot:
+
+[Start pulseaudio on boot](https://rudd-o.com/linux-and-free-software/how-to-make-pulseaudio-run-once-at-boot-for-all-your-users):
+
+```shell
+sudo vi /etc/systemd/system/pulseaudio.service
+```
+
+Then paste in:
+
+```ini
+[Unit]
+Description=PulseAudio system server
+
+[Service]
+Type=notify
+ExecStart=pulseaudio --daemonize=no --system --realtime --log-target=journal
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Then run:
+
+```shell
+sudo systemctl enable pulseaudio.service
+sudo systemctl start pulseaudio.service
+```
+
+#### Other resources/tips:
+
+- Adjust audio level on RPi via command line: `sudo alsamixer`

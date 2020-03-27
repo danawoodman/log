@@ -53,22 +53,6 @@ function MyComponent() {
 }
 ```
 
-### Speeding up Jest tests with Typescript
-
-In you `tsconfig.json`, make sure you ignore test files, like:
-
-```json
-{
-  // ... rest of your tsconfig.json...
-  "exclude": [
-    "node_modules",
-    "**/*.test.tsx?"
-  ]
-}
-```
-
-This will often drastically speed up your test runs.
-
 ### [Generics](https://www.typescriptlang.org/docs/handbook/generics.html)
 
 ```ts
@@ -126,6 +110,25 @@ function padLeft(value: string, padding: string | number) {
   throw new Error(`Expected string or number, got '${padding}'.`);
 }
 ```
+
+## Testing
+
+
+### Speeding up Jest tests with Typescript
+
+In you `tsconfig.json`, make sure you ignore test files, like:
+
+```js
+{
+  // ... rest of your tsconfig.json...
+  "exclude": [
+    "node_modules",
+    "**/*.test.tsx?"
+  ]
+}
+```
+
+This will often drastically speed up your test runs.
 
 ## Troubleshooting Typescript
 

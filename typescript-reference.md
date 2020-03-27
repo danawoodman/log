@@ -130,6 +130,41 @@ In you `tsconfig.json`, make sure you ignore test files, like:
 
 This will often drastically speed up your test runs.
 
+### Mocking
+
+Use the `ts-jest/utils` `mocked` function to assist in testing:
+
+```ts
+import { mocked } from 'ts-jest/utils'
+import someLib, { SomeReturnType } from 'some-lib
+
+// Mock the library
+jest.mock('some-library')
+
+// Create a typed, mocked instance of the lib under test.
+const mockedLib = mocked(someLib, true)
+
+describe('CognitoService', () => {
+  beforeEach(() => {
+    // Reset mocks for each test
+    mockedLib.someMethod.mockReset()
+  })
+  
+  test('.someMethod', async () => {
+    // Setup
+    const expected = { foo: 'bar' }
+    mockedSetup.someMethod.mockReturnValueOnce(expected as SomeReturnType)
+    
+    // Run
+    someLib.someMethod()
+    
+    // Assert
+    expect(mockedLib.someMethod).toBeCalledWith(expected)
+  })
+})
+```
+
+
 ## Troubleshooting Typescript
 
 ### `An index signature parameter type cannot be a union type. Consider using a mapped object type instead`
